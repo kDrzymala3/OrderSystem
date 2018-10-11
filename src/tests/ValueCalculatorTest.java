@@ -3,11 +3,8 @@ package tests;
 import logic.ValueCalculator;
 import model.Order;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Double.NaN;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ValueCalculatorTest {

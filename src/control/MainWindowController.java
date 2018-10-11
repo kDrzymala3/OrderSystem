@@ -12,6 +12,7 @@ import javafx.stage.Window;
 import logic.*;
 import model.Order;
 import logic.ValueCalculator;
+import view.ModalError;
 
 import java.io.File;
 import java.io.FileNotFoundException;
