@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainWindowController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" percentWidth="22.0" prefWidth="100.0" />
+      <ColumnConstraints percentWidth="20.0" />
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+      <ColumnConstraints percentWidth="18.0" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="10.0" />
+      <RowConstraints percentHeight="80.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints percentHeight="10.0" />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button id="fileBtn" fx:id="filesBtn" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickFiles" text="Select files" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField id="dirTxt" fx:id="dirTxt" promptText="File directory" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField id="idTxt" fx:id="idTxt" promptText="By client id" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button id="exportBtn" fx:id="exportBtn" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickExport" text="Export" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="quantityTxt" disable="true" editable="false" promptText="Quantity:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="priceTxt" disable="true" editable="false" promptText="Price:" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="meanPriceTxt" disable="true" editable="false" promptText="Mean price:" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <TableView fx:id="tableView" GridPane.columnSpan="6" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="colClientID" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="60.0" text="Client ID" />
+          <TableColumn fx:id="colReqID" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="70.0" text="Request ID" />
+            <TableColumn fx:id="colName" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="colQuantity" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="110.0" text="Quantity" />
+            <TableColumn fx:id="colPrice" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="114.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickReport" text="Report" GridPane.columnIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
